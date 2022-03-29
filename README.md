@@ -1,2 +1,0 @@
-# TT Ventures - landing
-
