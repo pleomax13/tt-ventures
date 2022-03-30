@@ -1,7 +1,7 @@
 {
     "name": "Top Trades Ventures",
     "short_name": "TT Ventures",
-    "start_url": "tt-ventures",
+    "start_url": "/",
     "description": "Развиваем крипто стартапы, которые меняют мир",
     "icons": [
         {
