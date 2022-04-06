@@ -26,10 +26,47 @@
     <meta property="twitter:description" content="Развиваем крипто стартапы,которые меняют мир">
     <meta property="og:image" content="share.png">
     <link rel="stylesheet" href="assets/css/common.css?v=1.2.4">
+    <style>
+      @keyframes preloader {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      
+      .preloader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #ffffff;
+        z-index: 10000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease-in-out;
+      }
+      
+      .preloader img {
+        width: 5rem;
+        height: 5rem;
+        animation-name: preloader;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+    </style>
   </head>
   <body class="body">
+    <div class="preloader"><img src="assets/img/logo-sm.svg" alt="TT Ventures" title="Загрузка"></div>
     <header class="header">
-      <div class="header__inner"><img class="header__logo" src="assets/img/logo.svg" alt="TT Ventures" width="91" height="24">
+      <div class="header__inner">
+        <button class="header__logo-btn js-scroll-to-top"><img class="header__logo" src="assets/img/logo.svg" alt="TT Ventures" width="91" height="24"></button>
         <div class="header__menu-wrap"> 
           <nav class="menu js-menu _close">
             <ul class="menu__list">
